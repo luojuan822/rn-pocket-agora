@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4C5CFABC1DFB945F0018F9C0 /* RCTAgoraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5CFAB71DFB945F0018F9C0 /* RCTAgoraManager.m */; };
+		4C5CFABD1DFB945F0018F9C0 /* RCTAgoraView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5CFAB91DFB945F0018F9C0 /* RCTAgoraView.m */; };
+		4C5CFABE1DFB945F0018F9C0 /* AgoraModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C5CFABB1DFB945F0018F9C0 /* AgoraModel.m */; };
+		4C5CFAC31DFB958A0018F9C0 /* libagora_fat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5CFAC11DFB958A0018F9C0 /* libagora_fat.a */; };
+		4C5CFAC41DFB958A0018F9C0 /* libagoradep_fat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5CFAC21DFB958A0018F9C0 /* libagoradep_fat.a */; };
+		4C5CFB7C1DFBCF040018F9C0 /* AgoraRtcEngineKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C5CFB7B1DFBCF040018F9C0 /* AgoraRtcEngineKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C5CFAA81DFB93700018F9C0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4C5CFAAA1DFB93700018F9C0 /* libAgoraManagerIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libAgoraManagerIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5CFAB61DFB945F0018F9C0 /* RCTAgoraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTAgoraManager.h; sourceTree = "<group>"; };
+		4C5CFAB71DFB945F0018F9C0 /* RCTAgoraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTAgoraManager.m; sourceTree = "<group>"; };
+		4C5CFAB81DFB945F0018F9C0 /* RCTAgoraView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTAgoraView.h; sourceTree = "<group>"; };
+		4C5CFAB91DFB945F0018F9C0 /* RCTAgoraView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTAgoraView.m; sourceTree = "<group>"; };
+		4C5CFABA1DFB945F0018F9C0 /* AgoraModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgoraModel.h; sourceTree = "<group>"; };
+		4C5CFABB1DFB945F0018F9C0 /* AgoraModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgoraModel.m; sourceTree = "<group>"; };
+		4C5CFAC01DFB958A0018F9C0 /* agorasdk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = agorasdk.h; path = lib/agorasdk.h; sourceTree = "<group>"; };
+		4C5CFAC11DFB958A0018F9C0 /* libagora_fat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libagora_fat.a; path = lib/libagora_fat.a; sourceTree = "<group>"; };
+		4C5CFAC21DFB958A0018F9C0 /* libagoradep_fat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libagoradep_fat.a; path = lib/libagoradep_fat.a; sourceTree = "<group>"; };
+		4C5CFB7B1DFBCF040018F9C0 /* AgoraRtcEngineKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AgoraRtcEngineKit.framework; path = libs/AgoraRtcEngineKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4C5CFAA71DFB93700018F9C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5CFB7C1DFBCF040018F9C0 /* AgoraRtcEngineKit.framework in Frameworks */,
+				4C5CFAC41DFB958A0018F9C0 /* libagoradep_fat.a in Frameworks */,
+				4C5CFAC31DFB958A0018F9C0 /* libagora_fat.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4C5CFAA11DFB93700018F9C0 = {
+			isa = PBXGroup;
+			children = (
+				4C5CFABF1DFB94700018F9C0 /* lib */,
+				4C5CFAAC1DFB93700018F9C0 /* AgoraManagerIOS */,
+				4C5CFAAB1DFB93700018F9C0 /* Products */,
+				4C5CFB7A1DFBCF040018F9C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4C5CFAAB1DFB93700018F9C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4C5CFAAA1DFB93700018F9C0 /* libAgoraManagerIOS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4C5CFAAC1DFB93700018F9C0 /* AgoraManagerIOS */ = {
+			isa = PBXGroup;
+			children = (
+				4C5CFAB61DFB945F0018F9C0 /* RCTAgoraManager.h */,
+				4C5CFAB71DFB945F0018F9C0 /* RCTAgoraManager.m */,
+				4C5CFAB81DFB945F0018F9C0 /* RCTAgoraView.h */,
+				4C5CFAB91DFB945F0018F9C0 /* RCTAgoraView.m */,
+				4C5CFABA1DFB945F0018F9C0 /* AgoraModel.h */,
+				4C5CFABB1DFB945F0018F9C0 /* AgoraModel.m */,
+			);
+			path = AgoraManagerIOS;
+			sourceTree = "<group>";
+		};
+		4C5CFABF1DFB94700018F9C0 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				4C5CFAC01DFB958A0018F9C0 /* agorasdk.h */,
+				4C5CFAC11DFB958A0018F9C0 /* libagora_fat.a */,
+				4C5CFAC21DFB958A0018F9C0 /* libagoradep_fat.a */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		4C5CFB7A1DFBCF040018F9C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C5CFB7B1DFBCF040018F9C0 /* AgoraRtcEngineKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4C5CFAA91DFB93700018F9C0 /* AgoraManagerIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C5CFAB31DFB93700018F9C0 /* Build configuration list for PBXNativeTarget "AgoraManagerIOS" */;
+			buildPhases = (
+				4C5CFAA61DFB93700018F9C0 /* Sources */,
+				4C5CFAA71DFB93700018F9C0 /* Frameworks */,
+				4C5CFAA81DFB93700018F9C0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgoraManagerIOS;
+			productName = AgoraManagerIOS;
+			productReference = 4C5CFAAA1DFB93700018F9C0 /* libAgoraManagerIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4C5CFAA21DFB93700018F9C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = jessica;
+				TargetAttributes = {
+					4C5CFAA91DFB93700018F9C0 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 64A58669RV;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4C5CFAA51DFB93700018F9C0 /* Build configuration list for PBXProject "AgoraManagerIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4C5CFAA11DFB93700018F9C0;
+			productRefGroup = 4C5CFAAB1DFB93700018F9C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4C5CFAA91DFB93700018F9C0 /* AgoraManagerIOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C5CFAA61DFB93700018F9C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C5CFABC1DFB945F0018F9C0 /* RCTAgoraManager.m in Sources */,
+				4C5CFABD1DFB945F0018F9C0 /* RCTAgoraView.m in Sources */,
+				4C5CFABE1DFB945F0018F9C0 /* AgoraModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4C5CFAB11DFB93700018F9C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4C5CFAB21DFB93700018F9C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C5CFAB41DFB93700018F9C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 64A58669RV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/libs",
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/Libraries/**",
+					"$(inherited)",
+					"$(SRCROOT)/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C5CFAB51DFB93700018F9C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 64A58669RV;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/libs",
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../react-native/React/**",
+					"$(SRCROOT)/../../react-native/Libraries/**",
+					"$(inherited)",
+					"$(SRCROOT)/**",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(inherited)",
+					"$(PROJECT_DIR)/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4C5CFAA51DFB93700018F9C0 /* Build configuration list for PBXProject "AgoraManagerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5CFAB11DFB93700018F9C0 /* Debug */,
+				4C5CFAB21DFB93700018F9C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C5CFAB31DFB93700018F9C0 /* Build configuration list for PBXNativeTarget "AgoraManagerIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C5CFAB41DFB93700018F9C0 /* Debug */,
+				4C5CFAB51DFB93700018F9C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4C5CFAA21DFB93700018F9C0 /* Project object */;
+}
