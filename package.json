@@ -1,0 +1,24 @@
+{
+  "name": "rn-pocket-agora",
+  "version": "1.0.0",
+  "description": "agora",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luojuan822/rn-pocket-agora.git"
+  },
+  "keywords": [
+    "react",
+    "native",
+    "agora"
+  ],
+  "author": "luojuan822",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luojuan822/rn-pocket-agora/issues"
+  },
+  "homepage": "https://github.com/luojuan822/rn-pocket-agora#readme"
+}
