@@ -199,6 +199,9 @@ public class AgoraModel extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void login(String signalKey, String account) {
+        if(agoraAPI.isOnline() == 1) {
+            agoraAPI.logout();
+        }
         agoraAPI.login(AgoraViewManager.getAppId(), account, signalKey, 0, null);
     }
 

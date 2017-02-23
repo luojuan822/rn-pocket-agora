@@ -176,13 +176,16 @@ RCT_EXPORT_MODULE()
   [[RCTAgoraView agoraKit] setupRemoteVideo:nil];
   [[RCTAgoraView agoraKit] leaveChannel:^(AgoraRtcStats *stat) {
     NSLog(@"leaveChannel===completed, %@", stat);
-//    [agoraApi channelLeave:channel];
+    [agoraApi logout];
     [[RCTAgoraView agoraKit] stopPreview];
   }];
 }
 
 RCT_EXPORT_METHOD(login: (NSString*) signalKey account:(NSString*) account) {
   NSLog(@"login===, %@, %@", signalKey, account);
+  if([agoraApi isOnline]) {
+    [agoraApi logout];
+  }
   [agoraApi login:[RCTAgoraManager appId] account:account token:signalKey uid:0 deviceID:nil];
 }
 
@@ -222,5 +225,9 @@ RCT_EXPORT_METHOD(logout) {
   NSLog(@"logout===");
   [agoraApi logout];
 }
+
+//RCT_EXPORT_METHOD(isOnline: (RCTResponseSenderBlock)callback) {
+//  callback(@[@([agoraApi isOnline])]);
+//}
 
 @end
