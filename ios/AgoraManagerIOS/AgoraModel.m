@@ -7,7 +7,7 @@
 //
 
 #import "AgoraModel.h"
-#import "RCTConvert.h"
+#import <React/RCTConvert.h>
 #import "RCTAgoraView.h"
 #import "agorasdk.h"
 #import "RCTAgoraManager.h"
@@ -81,13 +81,14 @@ RCT_EXPORT_MODULE()
       body[@"ecode"] = [NSString stringWithFormat:@"%lu", ecode];
       [self sendEventWithName:@"Agora_Resp" body:body];
     };
-    agoraApi.onInviteReceived       = ^(NSString* channel, NSString *name, uint32_t uid) {
-      NSLog(@"onInviteReceived===收到呼叫,%@ %@ %u",channel, name, uid);
+    agoraApi.onInviteReceived       = ^(NSString* channel,NSString* account,uint32_t uid,NSString* extra) {
+      NSLog(@"onInviteReceived===收到呼叫,%@ %@ %u %@",channel, account, uid, extra);
       NSMutableDictionary *body = @{}.mutableCopy;
       body[@"actionType"] = @"inviteReceived";
       body[@"channel"] = channel;
-      body[@"name"] = name;
+      body[@"account"] = account;
       body[@"uid"] = [NSString stringWithFormat:@"%u", uid];
+      body[@"extra"] = extra;
       [self sendEventWithName:@"Agora_Resp" body:body];
       
     };

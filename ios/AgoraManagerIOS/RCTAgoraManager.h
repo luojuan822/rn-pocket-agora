@@ -8,7 +8,7 @@
 
 #ifndef RCTAgoraManager_h
 #define RCTAgoraManager_h
-#import "RCTViewManager.h"
+#import <React/RCTViewManager.h>
 #import <AgoraRtcEngineKit/AgoraRtcEngineKit.h>
 
 @interface RCTAgoraManager : RCTViewManager<AgoraRtcEngineDelegate>

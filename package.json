@@ -1,24 +1,86 @@
 {
-  "name": "rn-pocket-agora",
-  "version": "1.0.0",
+  "_args": [
+    [
+      {
+        "raw": "rn-pocket-agora@git+https://github.com/luojuan822/rn-pocket-agora.git",
+        "scope": null,
+        "escapedName": "rn-pocket-agora",
+        "name": "rn-pocket-agora",
+        "rawSpec": "git+https://github.com/luojuan822/rn-pocket-agora.git",
+        "spec": "git+https://github.com/luojuan822/rn-pocket-agora.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:luojuan822/rn-pocket-agora.git",
+          "sshUrl": "git+ssh://git@github.com/luojuan822/rn-pocket-agora.git",
+          "httpsUrl": "git+https://github.com/luojuan822/rn-pocket-agora.git",
+          "gitUrl": "git://github.com/luojuan822/rn-pocket-agora.git",
+          "shortcut": "github:luojuan822/rn-pocket-agora",
+          "directUrl": "https://raw.githubusercontent.com/luojuan822/rn-pocket-agora/master/package.json"
+        }
+      },
+      "/Users/jessica/Documents/pocket"
+    ]
+  ],
+  "_from": "git+https://github.com/luojuan822/rn-pocket-agora.git",
+  "_id": "rn-pocket-agora@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/rn-pocket-agora",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "rn-pocket-agora@git+https://github.com/luojuan822/rn-pocket-agora.git",
+    "scope": null,
+    "escapedName": "rn-pocket-agora",
+    "name": "rn-pocket-agora",
+    "rawSpec": "git+https://github.com/luojuan822/rn-pocket-agora.git",
+    "spec": "git+https://github.com/luojuan822/rn-pocket-agora.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:luojuan822/rn-pocket-agora.git",
+      "sshUrl": "git+ssh://git@github.com/luojuan822/rn-pocket-agora.git",
+      "httpsUrl": "git+https://github.com/luojuan822/rn-pocket-agora.git",
+      "gitUrl": "git://github.com/luojuan822/rn-pocket-agora.git",
+      "shortcut": "github:luojuan822/rn-pocket-agora",
+      "directUrl": "https://raw.githubusercontent.com/luojuan822/rn-pocket-agora/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/luojuan822/rn-pocket-agora.git#3ce3f0fe791325e16eac1b38d7d2dde82a620bca",
+  "_shasum": "25290d69b9b54fa2c7eb30a5ea576a6bdb37bcb5",
+  "_shrinkwrap": null,
+  "_spec": "rn-pocket-agora@git+https://github.com/luojuan822/rn-pocket-agora.git",
+  "_where": "/Users/jessica/Documents/pocket",
+  "author": {
+    "name": "luojuan822"
+  },
+  "bugs": {
+    "url": "https://github.com/luojuan822/rn-pocket-agora/issues"
+  },
+  "dependencies": {},
   "description": "agora",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/luojuan822/rn-pocket-agora.git"
-  },
+  "devDependencies": {},
+  "gitHead": "3ce3f0fe791325e16eac1b38d7d2dde82a620bca",
+  "homepage": "https://github.com/luojuan822/rn-pocket-agora#readme",
   "keywords": [
     "react",
     "native",
     "agora"
   ],
-  "author": "luojuan822",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/luojuan822/rn-pocket-agora/issues"
+  "main": "index.js",
+  "name": "rn-pocket-agora",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luojuan822/rn-pocket-agora.git"
   },
-  "homepage": "https://github.com/luojuan822/rn-pocket-agora#readme"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }

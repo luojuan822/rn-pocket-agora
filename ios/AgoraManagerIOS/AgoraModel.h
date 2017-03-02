@@ -8,8 +8,8 @@
 
 #ifndef AgoraModel_h
 #define AgoraModel_h
-#import "RCTBridgeModule.h"
-#import "RCTEventEmitter.h"
+#import <React/RCTBridgeModule.h>
+#import <React/RCTEventEmitter.h>
 #import "agorasdk.h"
 
 @interface AgoraModel : RCTEventEmitter <RCTBridgeModule>

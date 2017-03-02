@@ -2,7 +2,7 @@
 #ifndef io_agora_sdk2_h
 #define io_agora_sdk2_h
 
-#define AGORA_SDK_VERSION "1.0.0.84"
+#define AGORA_SDK_VERSION "1.0.1.2"
 
 
 
@@ -71,7 +71,7 @@ typedef NS_ENUM(NSUInteger, AgoraEcode){
 @property (copy) void(^onChannelUserList)(NSMutableArray* accounts, NSMutableArray* uids);
 @property (copy) void(^onChannelQueryUserNumResult)(NSString* channelID,AgoraEcode ecode,int num) ;
 @property (copy) void(^onChannelAttrUpdated)(NSString* channelID,NSString* name,NSString* value,NSString* type) ;
-@property (copy) void(^onInviteReceived)(NSString* channelID,NSString* account,uint32_t uid) ;
+@property (copy) void(^onInviteReceived)(NSString* channelID,NSString* account,uint32_t uid,NSString* extra) ;
 @property (copy) void(^onInviteReceivedByPeer)(NSString* channelID,NSString* account,uint32_t uid) ;
 @property (copy) void(^onInviteAcceptedByPeer)(NSString* channelID,NSString* account,uint32_t uid) ;
 @property (copy) void(^onInviteRefusedByPeer)(NSString* channelID,NSString* account,uint32_t uid) ;
@@ -90,6 +90,7 @@ typedef NS_ENUM(NSUInteger, AgoraEcode){
 @property (copy) void(^onUserAttrResult)(NSString* account,NSString* name,NSString* value) ;
 @property (copy) void(^onUserAttrAllResult)(NSString* account,NSString* value) ;
 @property (copy) void(^onError)(NSString* name,AgoraEcode ecode,NSString* desc) ;
+@property (copy) void(^onQueryUserStatusResult)(NSString* name,NSString* status) ;
 
 
 
@@ -129,6 +130,7 @@ typedef NS_ENUM(NSUInteger, AgoraEcode){
 - (void) getAttrAll;
 - (void) getUserAttr:(NSString*)account name:(NSString*)name ;
 - (void) getUserAttrAll:(NSString*)account ;
+- (void) queryUserStatus:(NSString*)account ;
 - (void) invoke:(NSString*)name req:(NSString*)req ;
 - (void) start;
 - (void) stop;
